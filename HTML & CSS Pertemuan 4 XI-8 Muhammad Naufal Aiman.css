@@ -17,9 +17,18 @@
         height: 100%;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 300px) {
     #videoBG {
         display: none;
+    }
+    body {
+        background: url('thumbnail html.png');
+        background-size: contain;
+    }
+}
+@media (max-height: 400px) {
+    #videoBG {
+        display:none;
     }
     body {
         background: url('thumbnail html.png');
