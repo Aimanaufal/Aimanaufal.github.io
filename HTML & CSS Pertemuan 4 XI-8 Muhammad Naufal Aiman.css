@@ -23,7 +23,7 @@
     }
     body {
         background: url('thumbnail html.png');
-        background-size: cover;
+        background-size: contain;
     }
 }
 p {
