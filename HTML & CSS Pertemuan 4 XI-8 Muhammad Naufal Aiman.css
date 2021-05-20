@@ -5,8 +5,19 @@
     position:fixed;
     z-index: -1;
 }
+#videoBGnyala {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position:fixed;
+    z-index: -1;
+}
 @media (min-aspect-ratio: 20/9) {
     #videoBG {
+        width:100%;
+        height: auto;
+    }
+    #videoBGnyala {
         width:100%;
         height: auto;
     }
@@ -16,23 +27,30 @@
         width:auto;
         height: 100%;
     }
-}
-@media (max-width: 300px) {
-    #videoBG {
-        display: none;
-    }
-    body {
-        background: url('thumbnail html.png');
-        background-size: contain;
+    #videoBGnyala {
+        width:auto;
+        height: 100%;
     }
 }
-@media (max-height: 400px) {
+@media (max-width: 767px) {
     #videoBG {
         display:none;
     }
     body {
-        background: url('thumbnail html.png');
-        background-size: contain;
+        background: url('thumbnail html 2.png');
+        background-size:contain;
+    }
+    table {
+        width:100%
+    }
+}
+@media (max-height: 562px) {
+    #videoBG {
+        display:none;
+    }
+    body {
+        background: url('thumbnail html 2.png');
+        background-size:contain;
     }
 }
 p {
@@ -44,18 +62,65 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 tr:nth-child(odd) {
-    background-color: #c7c7c7;
+    background-color: #d7d7d7;
 }
-mark {
-    background-color: rgb(218, 42, 42);
+
+#markjudul {
+    background-color: #ffbb00e7;
 }
-img {
+#fotoaiman {
     border-radius: 10px;
+}
+#fotobrand {
+    padding: 0;
+}
+#textnavbar {
+    padding:0;
+    margin-top: 0.35%;
 }
 #menengah {
     text-align: center;
     font-weight: bold;
 }
+#isidata {
+    font-weight:550;
+}
 #markparagraf {
-    background-color:rgb(255, 255, 71) ;
+    background-color:#f2f2f2 ;
+}
+#marklogo {
+    color:black ;
+    background-color:#FFA900 ;
+}
+
+/*file homepage*/
+
+.judul-text {
+    position:absolute;
+    top: 50%;
+    text-align:center;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+.judul-text h2 {
+    color: #fff;
+    font-size: 80px;
+    padding:0;
+    margin: 0;
+    font-weight: bold;
+}
+.judul-text h2 span{
+    color: #FFA900;
+}
+.tombolmasuk {
+    display: inline-block;
+    margin-top: 5%;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 25px;
 }
