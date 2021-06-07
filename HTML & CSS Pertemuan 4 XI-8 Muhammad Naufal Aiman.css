@@ -67,6 +67,7 @@ tr:nth-child(odd) {
 
 #markjudul {
     background-color: #ffbb00e7;
+    font-weight: 600;
 }
 #fotoaiman {
     border-radius: 10px;
@@ -92,9 +93,20 @@ tr:nth-child(odd) {
     color:black ;
     background-color:#FFA900 ;
 }
+.tombolnavmanual {
+    display: inline-block;
+    margin:0;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 25px;
+}
 
 /*file homepage*/
-
 .judul-text {
     position:absolute;
     top: 50%;
@@ -123,4 +135,26 @@ tr:nth-child(odd) {
     padding: 10px 25px;
     color: white;
     border-radius: 25px;
+}
+
+/*file gallery*/
+#myhobbies {
+    padding: 30px 0px;
+}
+#myhobbies h1 {
+    font-size: 34px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.card-body {
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 1);
+}
+.card {
+    margin: 20px 10px;
+}
+.card-title {
+    font-weight: 600;
+}
+.card-text {
+    text-align: center;
 }
